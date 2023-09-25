@@ -1,0 +1,27 @@
+CATMAN TEST FILE
+PATH=F:\HBM\catmanEasy\DATA\2023_Exp_Meth_Lab1_Resistance_&_calib\Group3
+Version=catmanEasy university license
+Job name=Job1
+Data file with path=F:\HBM\catmanEasy\DATA\2023_Exp_Meth_Lab1_Resistance_&_calib\Group3\run1.2_1.BIN
+Data file=run1.2_1.BIN
+DAQ project=catmansetup.MEP
+File comment=
+Time zone=W. Europe Daylight Time (UTC+2:00)
+Operator=
+Department=
+Comment=
+Default sample rate=200 Hz
+Slow sample rate=5 Hz
+Fast sample rate=2400 Hz
+Number of samples default sample rate=8688
+Number of samples slow sample rate=0
+Number of samples fast sample rate=0
+Saving mode=PROMPT
+Leader/Follower mode=Yes
+Start mode=Manual
+Start time=2023/09/13 11:03:11
+Stop mode=Time
+Stop time=2023/09/13 11:03:54
+catmanEasy/AP version=5.5.3.13
+Numerical precision=8 Byte Float
+DATAFILE=F:\HBM\catmanEasy\DATA\2023_Exp_Meth_Lab1_Resistance_&_calib\Group3\run1.2_1.BIN

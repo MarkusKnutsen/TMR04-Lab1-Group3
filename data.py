@@ -98,8 +98,11 @@ for run in reader:
     
     # Assigning the correct unit on the y-axis
     plt.ylabel(units[sensor], fontsize=22)
+    plt.yticks(fontsize=15)
 
     plt.xlabel('Time [s]', fontsize=22)
+    plt.xticks(fontsize=15)
+
     # plt.title(title)
     plt.legend(fontsize=22)
 
@@ -121,8 +124,11 @@ for run in reader:
 
     # Assigning the correct unit on the y-axis
     plt.ylabel(units[sensor], fontsize=22)
+    plt.yticks(fontsize=15)
 
     plt.xlabel('Time [s]', fontsize=22)
+    plt.xticks(fontsize=15)
+    
     # plt.title(title)
     plt.legend(fontsize=22)
     plt.show()

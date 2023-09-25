@@ -133,7 +133,9 @@ for plot in range(0, 5):
         plt.vlines(x_axis, rtm-std_rtm, rtm+std_rtm,
                    label="Standard Deviation of Mean", color='teal')
         plt.ylabel("Resistance Force [N]", fontsize=22)
+        plt.yticks(fontsize=15)
         plt.xlabel("Velocity [m/s]", fontsize=22)
+        plt.xticks(fontsize=15)
         plt.legend(loc=2, fontsize=22)
         plt.show()
 
@@ -146,7 +148,9 @@ for plot in range(0, 5):
         plt.vlines(x_axis, speed-std_speed, speed+std_speed,
                    label="Standard Deviation of Mean", color='teal')
         plt.ylabel("Measured Velocity [m/s]", fontsize=22)
+        plt.yticks(fontsize=15)
         plt.xlabel("Velocity Setpoint [m/s]", fontsize=22)
+        plt.xticks(fontsize=15)
         plt.legend(loc=2, fontsize=22)
         plt.show()
 
@@ -163,7 +167,9 @@ for plot in range(0, 5):
         plt.plot(x_axis, mean_trim, 'o', linestyle='solid', color='red',
                  label='Mean Trim')
         plt.ylabel("Trim Angle [deg]", fontsize=22)
+        plt.yticks(fontsize=15)
         plt.xlabel("Velocity [m/s]", fontsize=22)
+        plt.yticks(fontsize=15)
         plt.legend(
             loc=2, fontsize=22)
         plt.title(
@@ -189,7 +195,9 @@ for plot in range(0, 5):
         plt.fill_between(x_axis, sink(sink_angle(sinkFP, FP_len), lwl/2)-sink(sink_angle(std_sinkFP, FP_len), lwl/2), sink(sink_angle(sinkFP, FP_len), lwl/2)+sink(sink_angle(std_sinkFP, FP_len), lwl/2),
                          color='paleturquoise', alpha=0.2)
         plt.ylabel("Sink [mm]", fontsize=22)
+        plt.yticks(fontsize=15)
         plt.xlabel("Velocity [m/s]", fontsize=22)
+        plt.xticks(fontsize=15)
         plt.legend(loc=2, fontsize=22)
         plt.show()
 
@@ -202,7 +210,9 @@ for plot in range(0, 5):
         plt.plot(Fn_app, Hollenbach, 'o', linestyle='solid', color='limegreen',
                  label='Hollenbach')
         plt.ylabel("Residual Resistance Coefficient [-]", fontsize=22)
+        plt.yticks(fontsize=15)
         plt.xlabel("Froude Number [m/s]", fontsize=22)
+        plt.xticks(fontsize=15)
         plt.title(
             "Comparison of experimental results against the Holtrop- and Hollenbach method", fontsize=22)
         plt.legend(loc=2, fontsize=22)

@@ -122,7 +122,7 @@ Hollenbach = [.000829, .000873, .000938, .001025, .001133,
               .001262, .001413, .001585, .001845, .002169, .002551, .002999]
 
 # Plotting everything after one another
-for plot in range(4, 5):
+for plot in range(0, 5):
     
     # Total resistance force plot with standard deviation
     if plot == 0:
@@ -132,9 +132,9 @@ for plot in range(4, 5):
                          color='mediumaquamarine', alpha=0.2)
         plt.vlines(x_axis, rtm-std_rtm, rtm+std_rtm,
                    label="Standard Deviation of Mean", color='teal')
-        plt.ylabel("Resistance Force [N]")
-        plt.xlabel("Velocity [m/s]")
-        plt.legend(loc=2)
+        plt.ylabel("Resistance Force [N]", fontsize=22)
+        plt.xlabel("Velocity [m/s]", fontsize=22)
+        plt.legend(loc=2, fontsize=22)
         plt.show()
 
     # Speed plot with standard deviation
@@ -145,9 +145,9 @@ for plot in range(4, 5):
                          color='mediumaquamarine', alpha=0.2)
         plt.vlines(x_axis, speed-std_speed, speed+std_speed,
                    label="Standard Deviation of Mean", color='teal')
-        plt.ylabel("Measured Velocity [m/s]")
-        plt.xlabel("Velocity Setpoint [m/s]")
-        plt.legend(loc=2)
+        plt.ylabel("Measured Velocity [m/s]", fontsize=22)
+        plt.xlabel("Velocity Setpoint [m/s]", fontsize=22)
+        plt.legend(loc=2, fontsize=22)
         plt.show()
 
     # Trim plots, see report. 
@@ -162,12 +162,12 @@ for plot in range(4, 5):
                  label='Trim at Maximum Possible Sink on both AP and FP.  |  + std(AP), + std(FP)')
         plt.plot(x_axis, mean_trim, 'o', linestyle='solid', color='red',
                  label='Mean Trim')
-        plt.ylabel("Trim Angle [deg]")
-        plt.xlabel("Velocity [m/s]")
+        plt.ylabel("Trim Angle [deg]", fontsize=22)
+        plt.xlabel("Velocity [m/s]", fontsize=22)
         plt.legend(
-            loc=2)
+            loc=2, fontsize=22)
         plt.title(
-            "When the trim is positive, it means that the vessel's AP is more inside the water than the FP")
+            "When the trim is positive, it means that the vessel's AP is more inside the water than the FP", fontsize=22)
         plt.show()
 
     # Plot of the mean sink in AP and FP and the standard deviation of both
@@ -188,9 +188,9 @@ for plot in range(4, 5):
                          color='lightcoral', alpha=0.2)
         plt.fill_between(x_axis, sink(sink_angle(sinkFP, FP_len), lwl/2)-sink(sink_angle(std_sinkFP, FP_len), lwl/2), sink(sink_angle(sinkFP, FP_len), lwl/2)+sink(sink_angle(std_sinkFP, FP_len), lwl/2),
                          color='paleturquoise', alpha=0.2)
-        plt.ylabel("Sink [mm]")
-        plt.xlabel("Velocity [m/s]")
-        plt.legend(loc=2)
+        plt.ylabel("Sink [mm]", fontsize=22)
+        plt.xlabel("Velocity [m/s]", fontsize=22)
+        plt.legend(loc=2, fontsize=22)
         plt.show()
 
     # Plot of the residual resistance in comparison with the Hollenbach and Holltrop method
@@ -201,11 +201,11 @@ for plot in range(4, 5):
                  label='Holtrop')
         plt.plot(Fn_app, Hollenbach, 'o', linestyle='solid', color='limegreen',
                  label='Hollenbach')
-        plt.ylabel("Residual Resistance Coefficient [-]")
-        plt.xlabel("Froude Number [m/s]")
+        plt.ylabel("Residual Resistance Coefficient [-]", fontsize=22)
+        plt.xlabel("Froude Number [m/s]", fontsize=22)
         plt.title(
-            "Comparison of experimental results against the Holtrop- and Hollenbach method")
-        plt.legend(loc=2)
+            "Comparison of experimental results against the Holtrop- and Hollenbach method", fontsize=22)
+        plt.legend(loc=2, fontsize=22)
         plt.show()
 
 # Data calculated for the runs at 6 m/s, used for error calculation in the report

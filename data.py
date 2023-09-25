@@ -97,11 +97,11 @@ for run in reader:
     plt.axvline(end_sample/sample_fq, linestyle=(0, (5, 5)), color='red')
     
     # Assigning the correct unit on the y-axis
-    plt.ylabel(units[sensor])
+    plt.ylabel(units[sensor], fontsize=22)
 
-    plt.xlabel('Time [s]')
+    plt.xlabel('Time [s]', fontsize=22)
     # plt.title(title)
-    plt.legend()
+    plt.legend(fontsize=22)
 
     # Showing the whole time-series
     plt.show()
@@ -120,11 +120,11 @@ for run in reader:
     plt.axhline((mean), linestyle='solid', color='red', label=('Mean ' + name + ' = ' + str(np.round(mean, 5))))
 
     # Assigning the correct unit on the y-axis
-    plt.ylabel(units[sensor])
+    plt.ylabel(units[sensor], fontsize=22)
 
-    plt.xlabel('Time [s]')
+    plt.xlabel('Time [s]', fontsize=22)
     # plt.title(title)
-    plt.legend()
+    plt.legend(fontsize=22)
     plt.show()
   
     
